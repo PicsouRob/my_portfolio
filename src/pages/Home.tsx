@@ -13,7 +13,7 @@ const HomeContent: React.FC = () => {
     const [ isShow, setIsShow ] = useState<boolean>(false);
     
     return (
-        <div id="home" className="static min-h-screen flex flex-col overflow-hidden">
+        <div id="home" className="relative min-h-screen flex flex-col overflow-hidden bg-red-30">
             <div className="w-full fixed bg-primary z-20">
                 <Header isShow={ isShow } setIsShow={ setIsShow } />
             </div>
@@ -22,10 +22,10 @@ const HomeContent: React.FC = () => {
                 <ToggleMenu isShow={isShow} setIsShow={setIsShow} />
             </div>
             
-            <div className="relative z-0 mt-16">
+            <img className="absolute -bottom-2 right-0 transform rotate-180 opacity-50" alt="top-svg" src={bg1} />
+            
+            <div className="relative z-0 mt-20 bg-green-30 h-full">
                 <div className="px-8 mx-auto max-w-7xl flex-1 flex items-center">
-                    <img className="absolute -bottom-2 right-0 transform rotate-180 opacity-50" alt="top-svg" src={bg1} />
-                    
                     <div className="relative py-16 mx-auto w-full">
                         <div className="flex flex-col lg:flex-row items-center gap-10">
                             <div className="w-full lg:w-1/2 flex lg:block flex-col items-center justify-center text-center lg:text-left">
@@ -35,7 +35,7 @@ const HomeContent: React.FC = () => {
                                         <hr className="h- w-20 bg-gray-300" />
                                     </div>
                                     
-                                    <h1 className="text-white text-4xl md:text-6xl font-semibold mb-4 tracking-tighter">I'm Phanord <strong className="text-secondary">Roberto</strong>, a full stack web developer.</h1>
+                                    <h1 className="text-white text-4xl md:text-6xl font-semibold mb-4 tracking-tighter">I'm Phanord <strong className="text-secondary">Roberto</strong>, a Full stack web developer.</h1>
                                     <span className="pt-2 max-w-lg text-xl tracking-wide leading-relaxed text-white">I am a web developer & programmer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.</span>
                                 </div>
                                 

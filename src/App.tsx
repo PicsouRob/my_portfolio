@@ -5,7 +5,7 @@ import bg1 from './images/bg-1.svg';
 import LoadingSpinner from "./components/LoadingSpinner";
 import Footer from "./components/Footer";
 
-import HomeContent from "./pages/HomeContent";
+import HomeContent from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Services";
 import Skills from "./pages/Skills";
@@ -16,9 +16,7 @@ const App: React.FC = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        // setTimeout(() => {
             setIsLoading(false);
-        // }, 500);
     }, [isLoading]);
 
     return (

@@ -38,7 +38,7 @@ const About: React.FC = () => {
                             </div>
                             
                             <p className="md:text-lg leading-relaxed font-medium mt-5">
-                                Hi, I am a Web Developer, programmer & User Interface Designer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.<br /><br /> I'm an Avid follower of technology and a developer by trade.I love learning new languages and always looking for something new to challenge myself.Since moving into full time developement, I have worked with Javascript , React and Node.I love building simple user interfaces that are beautiful to look at.
+                                Hi, I am a Web Developer, programmer & User Interface Designer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.<br /><br /> I'm an Avid follower of technology and a developer by trade. I love learning new languages and always looking for something new to challenge myself. Since moving into full time developement, I have worked with Javascript , React and Node. I love building simple user interfaces that are beautiful to look at.
                             </p>
                             
                             <div className="mt-8">
