@@ -16,7 +16,7 @@ const ToggleMenu: React.FC<DispatchProps> = ({ isShow, setIsShow }) => {
             >
                 <div className="cursor-pointer py-3">
                     <Link
-                        activeclassName="active"
+                        activeclassname="active"
                         to="home"
                         className=""
                         spy={true}
@@ -33,7 +33,7 @@ const ToggleMenu: React.FC<DispatchProps> = ({ isShow, setIsShow }) => {
                 
                 <div className="cursor-pointer py-3">
                     <Link
-                        activeclassName="active"
+                        activeclassname="active"
                         to="about"
                         className=""
                         spy={true}
@@ -48,7 +48,7 @@ const ToggleMenu: React.FC<DispatchProps> = ({ isShow, setIsShow }) => {
                 
                 <div className="cursor-pointer py-3">
                     <Link
-                        activeclassName="active"
+                        activeclassname="active"
                         to="services"
                         spy={true}
                         smooth={true}
@@ -63,7 +63,37 @@ const ToggleMenu: React.FC<DispatchProps> = ({ isShow, setIsShow }) => {
                 
                 <div className="cursor-pointer py-3">
                     <Link
-                        activeclassName="active"
+                        activeclassname="active"
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        className=""
+                        offset={-70}
+                        duration={500}
+                        onClick={() => toggleIcon()}
+                    >
+                        Skills
+                    </Link>
+                </div>
+                
+                <div className="cursor-pointer py-3">
+                    <Link
+                        activeclassname="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        className=""
+                        offset={-70}
+                        duration={500}
+                        onClick={() => toggleIcon()}
+                    >
+                        Projects
+                    </Link>
+                </div>
+                
+                <div className="cursor-pointer py-3">
+                    <Link
+                        activeclassname="active"
                         to="contact"
                         spy={true}
                         className=""

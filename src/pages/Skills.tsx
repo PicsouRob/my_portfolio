@@ -4,7 +4,7 @@ import HeaderText from '../components/HeaderText';
 
 const Skills: React.FC = () => {
     return (
-        <div>
+        <div id="skills" className="z-0">
             <section className="py-10 bg-gray-900 sm:py-16 lg:py-24 text-white">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <HeaderText subTitile='Skills' title='My Skills' text='My commitment to staying current with industry trends and my passion for continuous learning empower me to deliver innovative solutions and meet the evolving needs of every project.' />

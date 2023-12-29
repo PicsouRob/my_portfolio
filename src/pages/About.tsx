@@ -7,7 +7,7 @@ import SocialMedia from '../components/SocialMedia';
 
 const About: React.FC = () => {
     return (
-        <div id="about" className="relative z-20 w-full bg-gray-900">
+        <div id="about" className="relative w-full bg-gray-900 -z-10">
             <div className="max-w-7xl py-16 px-8 mx-auto">
                 <HeaderText
                     subTitile='About'
@@ -42,7 +42,7 @@ const About: React.FC = () => {
                             </p>
                             
                             <div className="mt-8">
-                                <Link activeclassName="active"
+                                <Link activeclassname="active"
                                     to="contact"
                                     spy={true}
                                     className="py-3 px-5 bg-white text-primary font-semibold text-base rounded-sm transition-all duration-200 hover:bg-secondary hover:text-white cursor-pointer"
