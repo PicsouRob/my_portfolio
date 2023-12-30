@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-scroll";
 
 import HeaderText from '../components/HeaderText';
-import aboutPhoto from "../images/picsou.jpg";
 import SocialMedia from '../components/SocialMedia';
 
 const About: React.FC = () => {
@@ -18,7 +17,11 @@ const About: React.FC = () => {
                 <div className="flex flex-col lg:flex-row gap-16 items-center mx-auto">
                     <div className="relative w-full lg:w-1/2">
                         <div className="absolute -top-2 left-0 -z-10 w-52 h-52 rounded-lg bg-[#880a0c]"></div>
-                        <img className="rounded-lg z-20 translate-x-3" src={aboutPhoto} alt='about' />
+                        <img
+                            className="rounded-lg z-20 translate-x-3"
+                            src="./images/picsou.jpg"
+                            alt='about'
+                        />
                     </div>
                     
                     <div className="w-full lg:w-1/2">

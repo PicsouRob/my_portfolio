@@ -8,12 +8,12 @@ export const servicesData: ServicesData[] = [
     },
     {
         name: "Cross-Platform App",
-        image: "./app.png",
+        image: "./images/app.png",
         text: "As a skilled cross-platform app developer, I specialize in creating versatile applications that seamlessly run on multiple devices."
     },
     {
         name: "Design UI|UX",
-        image: "./ux.png",
+        image: "./images/ux.png",
         text: "With a passion for intuitive design, I specialize in crafting compelling user interfaces and seamless user experiences."
     },
 ];

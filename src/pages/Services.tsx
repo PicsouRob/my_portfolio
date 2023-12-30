@@ -1,6 +1,5 @@
 import React from 'react';
 
-import bg1 from '../images/bg-1.svg';
 import { servicesData } from '../utils/servicesData';
 import ServiceItem from '../components/ServiceItem';
 import HeaderText from '../components/HeaderText';
@@ -8,8 +7,9 @@ import HeaderText from '../components/HeaderText';
 const Service: React.FC = () => {
     return (
         <div id="services" className="relative z-0">
-            <img className="absolute opacity-50 -z-10" alt="top-svg" src={bg1} />
-            <img className="absolute bottom-0 right-0 transform rotate-180 opacity-50 -z-10" alt="top-svg" src={bg1} />
+            <img className="absolute opacity-50 -z-10" alt="top-svg" src="./svg/bg-1.svg" />
+            
+            <img className="absolute bottom-0 right-0 transform rotate-180 opacity-50 -z-10" alt="top-svg" src="./svg/bg-1.svg" />
             
             <div className="px-8 max-w-7xl mx-auto text-white py-10 sm:py-16 lg:py-24">
                 <HeaderText

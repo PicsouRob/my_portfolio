@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-scroll";
 
-import img from '../images/picsou.jpg';
-import pic from '../images/picsou.png';
-import svg1 from '../images/blob-haikei(2).svg';
-import bg1 from '../images/bg-1.svg';
 import ToggleMenu from '../components/ToggleMenu';
 import Header from '../components/Header';
 import SocialMedia from '../components/SocialMedia';
@@ -15,14 +11,14 @@ const HomeContent: React.FC = () => {
     return (
         <div id="home" className="relative min-h-screen flex flex-col overflow-hidden bg-red-30">
             <div className="w-full fixed bg-primary z-20">
-                <Header isShow={ isShow } setIsShow={ setIsShow } />
+                <Header isShow={isShow} setIsShow={setIsShow} />
             </div>
             
             <div className="fixed  top-10 left-0 right-0 overflow-hidden z-20">
                 <ToggleMenu isShow={isShow} setIsShow={setIsShow} />
             </div>
             
-            <img className="absolute -bottom-2 right-0 transform rotate-180 opacity-50" alt="top-svg" src={bg1} />
+            <img className="absolute -bottom-2 right-0 transform rotate-180 opacity-50" alt="top-svg" src="./svg/bg-1.svg" />
             
             <div className="relative z-0 mt-20 bg-green-30 h-full">
                 <div className="px-8 mx-auto max-w-7xl flex-1 flex items-center">
@@ -41,7 +37,7 @@ const HomeContent: React.FC = () => {
                                 
                                 <Link activeclassname="active"
                                     to="about"
-                                    spy={ true }
+                                    spy={true}
                                     className=""
                                     smooth={true}
                                     offset={-70}
@@ -64,48 +60,14 @@ const HomeContent: React.FC = () => {
                             </div>
                             
                             <div className="hidden relative w-full lg:w-1/2 lg:flex z-30 items-center justify-center">
-                                <div className="absolute top- right-0 flex gap-x-2 p-1 md:p-3 rounded-lg bg-white z-10 lg:z-20 items-center w-auto ms:w-64 shadow-lg">
-                                    <img alt="" src={img} 
-                                        className="w-8 h-8 rounded-full"
-                                    />
-                                    
-                                    <div className="w-50 leading-3 text-sm ">
-                                        <span className="font-medium">Phanord Roberto</span>
-                                        <p className="font-medium text-gray-900">Full-Stack Developer</p>
-                                    </div>
-                                </div>
-                                
-                                <div className="absolute top-0 left-0 flex gap-x-2 p-2 md:px-3 py-2 rounded-lg bg-white z-10 items-center w-auto ms:w-64 shadow-lg">
-                                    <img alt="" src={img} 
-                                        className="w-8 h-8 rounded-full"
-                                    />
-                                    
-                                    <div className="w-50 leading-4 text-sm">
-                                        <span className="font-medium">Phanord Roberto</span>
-                                        <p className="font-medium text-gray-900">Programmer</p>
-                                    </div>
-                                </div>
-                                
-                                <div className="absolute bottom-0 left-0 flex gap-x-2 p-2 md:px-3 rounded-lg bg-white z-40 items-center w-auto ms:w-64 shadow-lg">
-                                    <img alt="" src={img} 
-                                        className="w-8 h-8 rounded-full"
-                                    />
-                                    
-                                    <div className="w-50 leading-4 text-sm ">
-                                        <span className="font-medium">Phanord Roberto</span>
-                                        <p className="font-medium text-gray-900">UI|UX Designer</p>
-                                    </div>
-                                </div>
-                                
-                                <img alt="" src={svg1} className="absolute h-full -z-10" />
-                                <img alt="" src={pic} className="z-10" />
+                                <img alt="" src="./svg/home.svg" className="z-10" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default HomeContent;

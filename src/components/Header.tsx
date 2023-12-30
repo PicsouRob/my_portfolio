@@ -2,7 +2,6 @@ import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
-import logo from "../images/logo.jpeg";
 import { DispatchProps } from '../types';
 
 const Header: React.FC<DispatchProps> = ({ isShow, setIsShow }) => {
@@ -25,7 +24,7 @@ const Header: React.FC<DispatchProps> = ({ isShow, setIsShow }) => {
                         <div className="flex text-2xl md:text-3xl font-bold cursor-pointer gap-x- items-center z-30">
                             <img
                                 alt=""
-                                src={logo}
+                                src="./images/logo.jpeg"
                                 className="w-auto mix-blend-normal h-8 z-40"
                             />
                         </div>

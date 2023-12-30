@@ -2,7 +2,6 @@ import React from 'react';
 
 import { projectsData } from '../utils/projectsData';
 import ProjectItem from '../components/ProjectItem';
-import bg1 from '../images/bg-1.svg';
 import HeaderText from '../components/HeaderText';
 
 const Projects: React.FC = () => {
@@ -14,13 +13,13 @@ const Projects: React.FC = () => {
             <img
                 className="absolute opacity-50 -z-10"
                 alt="top-svg"
-                src={bg1}
+                src="./svg/bg-1.svg"
             />
             
             <img
                 className="absolute bottom-0 right-0 transform rotate-180 opacity-50"
                 alt="top-svg"
-                src={bg1}
+                src="./svg/bg-1.svg"
             />
             
             <section
